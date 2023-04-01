@@ -6,11 +6,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  margin-top: 0;
+  margin-top: 50px;
   text-align: center;
   font-size: 48px;
   color: #fff;
@@ -51,6 +53,7 @@ button {
   background-color: #0073e6;
   color: #fff;
   width: 200px;
+
   cursor: pointer;
 }
 
@@ -62,10 +65,11 @@ button:hover {
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  margin-bottom: auto;
 }
 
 .loader {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -90,21 +94,13 @@ button:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 12px;
+  margin-top: auto;
   opacity: 0.5;
   color: #fff;
   user-select: none;
-}
-
-footer a {
-  text-decoration: none;
-  color: #fff;
-}
-
-footer a:hover {
-  text-decoration: underline;
+  position: relative;
+  font-size: 10px;
+  text-align: center;
+  background-color: #333;
+  width: 100%;
 }

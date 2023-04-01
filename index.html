@@ -17,7 +17,12 @@
     <h1>QReate</h1>
     <form>
       <label for="url-input">Enter URL:</label>
-      <input type="url" id="url-input" placeholder="https://" required />
+      <input
+        type="url"
+        id="url-input"
+        placeholder="https://dcmrockwell.com"
+        required
+      />
       <label for="size-input">QR Code Size:</label>
       <select id="size-input" name="size">
         <option value="300" selected>300x300</option>
@@ -33,18 +38,11 @@
       </div>
     </div>
 
+    <button id="download-btn" style="display: none">Download</button>
+
     <footer>
-      <p>
-        This QR Code Generator project uses the
-        <a href="https://cdnjs.com/libraries/qrious">Qrious</a> library for
-        generating QR codes.
-      </p>
-      <p style="text-align: center">
-        Created with Vanilla JavaScript, HTML, and CSS.
-      </p>
-      <p style="text-align: center; font-size: 10px">
-        &copy; 2023 DCMRockwell.com. All rights reserved.
-      </p>
+      <p>Created using Vanilla JS/HTML&amp;CSS</p>
+      <p>&copy; 2023 DCMRockwell.com. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
