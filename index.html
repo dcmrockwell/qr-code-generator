@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qreate - QR Code Generator Sample Project</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  </head>
+  <body>
+    <h1>QReate</h1>
+    <form>
+      <label for="url-input">Enter URL:</label>
+      <input type="url" id="url-input" placeholder="https://" required />
+      <label for="size-input">QR Code Size:</label>
+      <select id="size-input" name="size">
+        <option value="300" selected>300x300</option>
+        <option value="200">200x200</option>
+        <option value="400">400x400</option>
+        <option value="500">500x500</option>
+      </select>
+      <button id="generate-btn">Generate QR Code</button>
+    </form>
+    <div id="qr-code">
+      <div class="loader">
+        <div class="spinner"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        This QR Code Generator project uses the
+        <a href="https://cdnjs.com/libraries/qrious">Qrious</a> library for
+        generating QR codes.
+      </p>
+      <p style="text-align: center">
+        Created with Vanilla JavaScript, HTML, and CSS.
+      </p>
+      <p style="text-align: center; font-size: 10px">
+        &copy; 2023 DCMRockwell.com. All rights reserved.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
